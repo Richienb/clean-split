@@ -1,13 +1,12 @@
 import test from "ava"
-import theModule from "."
+import cleanSplit from "."
 
-test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
+test("basic usage", (t) => {
+	t.deepEqual(cleanSplit("a-b-c", "-"), ["a", "-", "b", "-", "c"])
+})
 
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+test("custom anchors", (t) => {
+	t.deepEqual(cleanSplit("a-b-c", "-", { anchor: "none" }), ["a", "-", "b", "-", "c"])
+	t.deepEqual(cleanSplit("a-b-c", "-", { anchor: "before" }), ["a-", "b-", "c"])
+	t.deepEqual(cleanSplit("a-b-c", "-", { anchor: "after" }), ["a", "-b", "-c"])
 })

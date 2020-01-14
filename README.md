@@ -1,41 +1,53 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Clean Split [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/clean-split/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/clean-split)
 
-My awesome module.
+Cleanly split a string by retaining the delimiter.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/clean-split.png)](https://npmjs.com/package/clean-split)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install clean-split
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const cleanSplit = require("clean-split");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+cleanSplit("a-b-c", "-");
+//=> ["a", "-", "b", "-", "c"]
+
+cleanSplit("a-b-c", "-", { anchor: "before" });
+//=> ["a-", "b-", "c"]
+
+cleanSplit("a-b-c", "-", { anchor: "after" });
+//=> ["a", "-b", "-c"]
 ```
 
 ## API
 
-### theModule(input, options?)
+### cleanSplit(string, delimiter, options?)
 
-#### input
+#### string
 
 Type: `string`
 
-Lorem ipsum.
+The string to split.
+
+#### delimiter
+
+Type: `string or regexp`
+
+The delimiter to split the string by.
 
 #### options
 
 Type: `object`
 
-##### postfix
+##### anchor
 
-Type: `string`\
-Default: `rainbows`
+Type: `string` (`none`, `before` or `after`)\
+Default: `none`
 
-Lorem ipsum.
+Anchor the delimiter to different sides of the split.
