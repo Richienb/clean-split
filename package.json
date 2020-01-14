@@ -18,7 +18,10 @@
         "test": "yarn lint && ava"
     },
     "keywords": [],
-    "dependencies": {},
+    "dependencies": {
+        "@sindresorhus/is": "^1.2.0",
+        "named-regexp-groups": "^1.0.5"
+    },
     "devDependencies": {
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.3.0",
