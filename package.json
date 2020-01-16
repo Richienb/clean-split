@@ -15,7 +15,8 @@
 	},
 	"scripts": {
 		"lint": "xo",
-		"test": "yarn lint && ava"
+		"test": "yarn lint && ava",
+		"coverage": "nyc --reporter=lcov --reporter=text-summary ava"
 	},
 	"keywords": [
 		"split",
@@ -38,6 +39,7 @@
 	"devDependencies": {
 		"ava": "^2.4.0",
 		"eslint-config-richienb": "^0.3.0",
+		"nyc": "^15.0.0",
 		"xo": "^0.25.3"
 	},
 	"resolutions": {

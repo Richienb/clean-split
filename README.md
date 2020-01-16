@@ -47,7 +47,7 @@ Type: `object`
 
 ##### anchor
 
-Type: `string` (`none`, `before` or `after`)\
+Type: `string` (`none`, `before`, `after`, `left` or `right`)\
 Default: `none`
 
 Anchor the delimiter to different sides of the split.

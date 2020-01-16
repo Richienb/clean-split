@@ -19,7 +19,7 @@
 */
 declare function cleanSplit(string: string, delimiter: string | RegExp, options?: {
 	/** Anchor the delimiter to different sides of the split. */
-	anchor?: "none" | "before" | "after"
+	anchor?: "none" | "before" | "after" | "left" | "right"
 }): string[]
 
 export = cleanSplit
