@@ -33,7 +33,7 @@
 	],
 	"dependencies": {
 		"escape-string-regexp": "^2.0.0",
-		"ow": "^0.15.0",
+		"ow": "^0.16.0",
 		"regex-parser": "^2.2.10"
 	},
 	"devDependencies": {
