@@ -1,5 +1,5 @@
-import test from "ava"
-import cleanSplit from "."
+const test = require("ava")
+const cleanSplit = require(".")
 
 test("basic usage", (t) => {
 	t.deepEqual(cleanSplit("a-b-c", "-"), ["a", "-", "b", "-", "c"])
