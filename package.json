@@ -1,6 +1,6 @@
 {
 	"name": "clean-split",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Cleanly split a string by retaining the delimiter.",
 	"repository": "https://github.com/Richienb/clean-split.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
@@ -15,7 +15,8 @@
 	},
 	"scripts": {
 		"lint": "xo",
-		"test": "yarn lint && ava"
+		"test": "yarn lint && ava",
+		"coverage": "nyc --reporter=lcov --reporter=text-summary ava"
 	},
 	"keywords": [
 		"split",
@@ -38,7 +39,8 @@
 	"devDependencies": {
 		"ava": "^3.5.0",
 		"eslint-config-richienb": "^0.3.0",
-		"xo": "^0.26.1"
+		"xo": "^0.26.1",
+		"nyc": "^15.0.0"
 	},
 	"resolutions": {
 		"eslint": "^6.8.0"
