@@ -3559,6 +3559,11 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
+regex-parse@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/regex-parse/-/regex-parse-1.0.0.tgz#5391a4afcef3c372f7da9ec886c2f15cbc63705b"
+  integrity sha512-SisyNBELTOA3MR8Q6xo64NAriAHUOIIH4Yn6351gMxaFg5dtSea6eGCAd6qzY/yFAY1YWG9TV2oFlurWXVqPEQ==
+
 regex-parser@^2.2.10:
   version "2.2.10"
   resolved "https://registry.yarnpkg.com/regex-parser/-/regex-parser-2.2.10.tgz#9e66a8f73d89a107616e63b39d4deddfee912b37"

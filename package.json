@@ -11,7 +11,7 @@
 		"index.d.ts"
 	],
 	"engines": {
-		"node": ">=8.10"
+		"node": ">=10"
 	},
 	"scripts": {
 		"lint": "xo",
@@ -33,14 +33,15 @@
 	],
 	"dependencies": {
 		"escape-string-regexp": "^2.0.0",
-		"ow": "^0.15.0",
+		"ow": "^0.17.0",
+		"regex-parse": "^1.0.0",
 		"regex-parser": "^2.2.10"
 	},
 	"devDependencies": {
 		"ava": "^3.5.0",
 		"eslint-config-richienb": "^0.3.0",
-		"xo": "^0.26.1",
-		"nyc": "^15.0.0"
+		"nyc": "^15.0.0",
+		"xo": "^0.26.1"
 	},
 	"resolutions": {
 		"eslint": "^6.8.0"
