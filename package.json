@@ -32,7 +32,7 @@
 		"parse"
 	],
 	"dependencies": {
-		"escape-string-regexp": "^2.0.0",
+		"escape-string-regexp": "^3.0.0",
 		"ow": "^0.17.0",
 		"regex-parse": "^1.0.0",
 		"regex-parser": "^2.2.10"
